@@ -1,0 +1,19 @@
+|Enrollment Type (from GraphAPI)|Applicable Platfoms|Description|Ownership|
+|:----|:----|:----|:----|
+|UserEnrollment|Android device administrator;Android Enterprise; iOS;  Windows 10 and later;macOS|User-driven enrollments from the Company Portal app on mobiles, or "Enroll in MDM only" option from settings in Windows|Personal|
+|DeviceEnrollment|iOS;macOS|Enrollment using Apple Automated Enrollment (ADE) profile that specifies "without user affinity"|Corporate|
+|DeviceEnrollmentWithUDA|iOS;macOS|Enrollment using Apple Automated Enrollment (ADE) profile that specifies "with user affinity"|Corporate|
+|AzureDomainJoined|Windows 10 and later|User-driven Azure AD Join and automatic Intune enrollment from OOBE or Settings|Corporate|
+|UserEnrollmentWithServiceAccount|Android device administrator;Android Enterprise; iOS;  Windows 10 and later;macOS|User driven enrollment using a Device Enrollment Manager (DEM) account|Corporate|
+|AutoEnrollment |Windows 10 and later|User driven enrollment from settings or modern app sign-in on Windows, where an Azure AD device registration occurs and causes automatic Intune enrollment|Personal|
+|BulkAzureDomainJoined|Windows 10 and later|Azure AD Join enrollment using a provisioning package containing an AAD bulk enrollment token|Corporate|
+|OnPremiseCoManaged|Windows 10 and later|Enrollment triggered by an on-prem enrollment policy including Configuration manager co-management or Group Policy setting |Corporate|
+|CompanyPortalBulkEnrollment|iOS;macOS|Enrollment using Apple Automated Enrollment (ADE) profile that specifies "Company portal" as the authentication method. This flow has been deprecated by Microsoft.|Corporate|
+|AzureADJoinUsingDeviceAuth |Windows 10 and later|Autopilot enrollnent flow where you choose "self-deploying" mode|Corporate| |
+|AzureADJoinUsingWhiteGlove|Windows 10 and later|Autopilot enrollment flow where you select "Allow pre-provisioned deployment" in the Autopilot profile|Corporate|
+|OnPremiseUsingWhiteGlove |Windows 10 and later|Autopilot enrollment flow where you select "Hybrid Azure AD Join" and "Allow pre-provisioned deployment" in the Autopilot profile|Corporate|
+|AppleUserEnrollment |iOS; |Apple user driven enrollment where a device type profile has been configured to do "User enrollment". User Enrollment supported for iOS13+|Personal|
+|AppleBulkEnrollmentModernAuth |iOS;macOS|Enrollment using Apple Automated Enrollment (ADE) profile that specifies "Setup Assistant with modern authentication" as the authentication method|Corporate|
+|AndroidEnterpriseDedicatedDevice |Android Enterprise|Enrollment using a Android Enterprise Corporate Owned, Dedicated (aka COSU) enrollment profile|Corporate|
+|AndroidEnterpriseFullyManaged |Android Enterprise|Enrollment using a Android Enterprise Corporate Owned, Fully managed (aka COBO) enrollment profile|Corporate|
+|AndroidEnterpriseCorporateWorkProfile |Android Enterprise|Enrollment using a Android Enterprise Corporate Owned, Work Profile (aka COPE) enrollment profile|Corporate|
